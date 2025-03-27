@@ -3,53 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesley Mutsambiwa</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Lesley Mutsambiwa | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <canvas id="particleCanvas"></canvas>
-    <div class="container">
-        <div class="item" id="sidebar">
-            <!-- User name -->
-            <button id="menu-button">☰</button>
-             <div class="user">
-                <div class="image">
-                    <img src="image/rocket.png" alt="User Image">
+    <header>
+        <nav>
+            <div class="logo">Lesley<span>Mutsambiwa</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> <span>About</span></a></li>
+                <li><a href="#projects"><i class="fas fa-code"></i> <span>Projects</span></a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Lesley Mutsambiwa</span></h1>
+                <h2><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
+                <p>Computer Science Student | Hackathon Enthusiast | Tech Community Builder</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
-
-                <div class="name">
-                    <h1>Lesley <span>Mutsambiwa</span></h1>
-                </div>   
-             </div>
-            <!-- NavBar -->
-             <nav class="navlink">
-                <ul>
-                    <li>
-                      <a href="#home">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-
-                    <li>
-                        <a href="#project">Projects</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-             </nav>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="home-image">
+                <img src="images/profile.jpg" alt="Lesley">
+            </div>
         </div>
+    </section>
 
-        <!-- Content -->
-        <div class="item" id="content">
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            
+            <div class="bio-section">
+                <div class="bio-image">
+                    <img src="images/about.jpg" alt="Lesley">
+                </div>
+                <div class="bio-content">
+                    <h3><i class="fas fa-user-graduate"></i> Who Am I?</h3>
+                    <p>Hey there! I'm a passionate full-stack developer in the making, constantly exploring the world of web development and refining my skills in HTML, CSS, JavaScript, Node.js, and MongoDB. I love turning ideas into functional, user-friendly applications and have a strong interest in building impactful projects.</p>
+                    <p>What I Do</p>
+                    <p>💻 Web Development – I build user-friendly and functional applications using HTML, CSS, JavaScript, Node.js, and MongoDB.</p>
+                    <p>🛠️ Project-Based Learning – I believe in learning by doing, and I’m constantly working on projects that challenge me to grow.</p>
+                    <p>🚀 Tech Enthusiast – I enjoy customizing Linux, exploring databases, and experimenting with open-source tools.</p>
+                    <p>Currently, I'm working on:</p>
+                    <p>🚀 An e-commerce platform with user authentication & product management</p>
+                    <p>📌 A volunteer management system to track NGO impact</p>
+                    <p>Beyond coding, I enjoy learning new technologies, problem-solving, and pushing myself to grow as a developer. My goal is to create meaningful and efficient digital solutions while continuously improving my craft.</p>
+                    <p>Let’s connect and build something amazing together!</p>
+                    <div class="personal-interests">
+                        <h4><i class="fas fa-heart"></i> Interests</h4>
+                        <div class="interests-list">
+                            <span><i class="fas fa-code"></i> Open Source</span>
+                            <span><i class="fas fa-robot"></i> AI/ML</span>
+                            <span><i class="fas fa-users"></i> Learning</span>
+                            <span><i class="fas fa-users"></i> Projects</span>
+                            <span><i class="fas fa-users"></i> Development</span>
+                            <span><i class="fas fa-users"></i> Back-end</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-tabs">
+                <button class="tab-btn active" data-tab="education"><i class="fas fa-graduation-cap"></i> Education</button>
+                <button class="tab-btn" data-tab="events"><i class="fas fa-calendar-alt"></i> Events</button>
+                <button class="tab-btn" data-tab="certifications"><i class="fas fa-certificate"></i> Certifications</button>
+            </div>
+            
+            <div class="tab-content active" id="education">
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="edu-header">
+                            <i class="fas fa-university"></i>
+                            <h3>Africa University</h3>
+                        </div>
+                        <div class="edu-details">
+                            <h4>B.S. Computer Science</h4>
+                            <p class="date">2024 - 2028</p>
+                            <ul>
+                                <li>GPA: 3.8/4.0</li>
+                                <li>Coursework: Algorithms, AI, Web Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="events">
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-header">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Hack the North</h3>
+                        </div>
+                        <div class="event-details">
+                            <p class="date">September 2023</p>
+                            <p class="role">Team Lead</p>
+                            <p>Built an AI study assistant that creates personalized flashcards.</p>
+                            <div class="tech-used">
+                                <span>React</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="certifications">
+                
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <div class="certification-header">
+                            <i class="fas fa-certificate"></i>
+                            <h3>Certified in Cybersecurity</h3>
+                        </div>
+                        <p>Issued by ISC2</p>
+                        <p class="date">June 2023</p>
+                        <a href="https://isc2.obrizum.io/org/cc/certificate/2fb09566-4123-4a81-8d6e-ede76085ef65" class="btn btn-small">View</a>
+                    </div>
 
+                    <div class="certification-card">
+                        <div class="certification-header">
+                            <i class="fas fa-certificate"></i>
+                            <h3>CSS, Bootstrap And JavaScript And PHP Complete</h3>
+                        </div>
+                        <p>Issued by Udemy</p>
+                        <p class="date">December 2024</p>
+                        <a href="https://www.udemy.com/certificate/UC-54eb583a-1b52-4362-9922-1444ddfe76cc/" class="btn btn-small">View</a>
+                    </div>
+
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <div class="skills-list">
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks</h4>
+                        <div class="skills-list">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <script src="main.js"></script>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            
+            <div class="project-tabs">
+                <button class="tab-btn active" data-tab="top-projects"><i class="fas fa-star"></i> Top Projects</button>
+                <button class="tab-btn" data-tab="hackathon-projects"><i class="fas fa-trophy"></i> Hackathons</button>
+            </div>
+            
+            <div class="tab-content active" id="top-projects">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/project1.jpg" alt="StudyBuddy">
+                        <div class="project-info">
+                            <h3>StudyBuddy AI</h3>
+                            <p>AI-powered study assistant that creates personalized study plans.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="hackathon-projects">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/hackathon1.jpg" alt="EcoTrack">
+                        <div class="project-info">
+                            <h3>EcoTrack</h3>
+                            <p>Carbon footprint tracker with gamification.</p>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-small"><i class="fas fa-external-link-alt"></i> Devpost</a>
+                                <a href="#" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3><i class="fas fa-paper-plane"></i> Get In Touch</h3>
+                    <p>Interested in collaborating? I'd love to hear from you!</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>mutsambiwal@africau.edu</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Lesley Mutsambiwa. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
